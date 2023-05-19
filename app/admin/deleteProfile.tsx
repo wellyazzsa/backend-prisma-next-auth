@@ -21,7 +21,7 @@ const DeleteProfile = ({ profile }: { profile: Profile }) => {
 
   const handleDelete = async (profileId: number) => {
     setIsLoading(true);
-    await axios.delete(`/api/profiles/${profileId}`);
+    await axios.delete(`/api/admin/${profileId}`);
     setIsLoading(false);
     router.refresh();
     setIsOpen(false);
