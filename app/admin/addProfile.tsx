@@ -88,7 +88,7 @@ const AddProfile = ({users}: {users : User[]}) => {
                     <div className="form-control w-full">
                         <label className="label font-bold">Profile Picture</label>
                         <input 
-                        type="text" 
+                        type="file" 
                         value={picture}
                         onChange={(e) => setPicture(e.target.value)}
                         className="input input-bordered" 

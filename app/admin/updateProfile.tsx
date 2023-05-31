@@ -97,7 +97,7 @@ const UpdateProfile = ({
                     <div className="form-control w-full">
                         <label className="label font-bold">Picture</label>
                         <input 
-                        type="text" 
+                        type="file" 
                         value={picture}
                         onChange={(e) => setPicture(e.target.value)}
                         className="input input-bordered" 
